@@ -22,7 +22,7 @@ CREATE TABLE [dbo].[food_nutrient](
 	[loq] VARCHAR(50) NULL,								-- NEW/UPDATED April 2024
 	[footnote] VARCHAR(50) NULL,						-- NEW/UPDATED April 2024
 	[min_year_acquired] [smallint] NULL,
-	[percent_daily_value] VARCHAR(50) NULL,				-- NEW/UPDATED April 2024
+	[percent_daily_value] decimal(23,18) NULL,			-- NEW/UPDATED April 2024
 	[SSMA_TimeStamp] [timestamp] NOT NULL,
  CONSTRAINT [food_nutrient$id] PRIMARY KEY CLUSTERED 
 (

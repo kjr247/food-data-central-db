@@ -111,7 +111,7 @@ BEGIN TRY
 							, loq
 							, footnote
 							, CAST(min_year_acquired AS SMALLINT) AS min_year_acquired
-							, RTRIM(LTRIM(REPLACE(t.percent_daily_value, '"', ''))) AS percent_daily_value
+							, CAST(REPLACE(REPLACE(t.percent_daily_value, '"', ''))), CHAR(13), '') AS decimal(23,18)) AS percent_daily_value
 							--, brand_owner
 							--, brand_name
 							--, subbrand_name
